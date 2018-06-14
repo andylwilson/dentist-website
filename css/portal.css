@@ -67,6 +67,11 @@ h3 {
     padding-left:10px;
 }
 
+img.404 {
+    width:400px;
+    margin:0 auto;
+}
+
 /* START RESPONSIVE STYLES */
 
 /* DESKTOP */

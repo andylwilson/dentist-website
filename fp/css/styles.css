@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div#wrapper {
+    width:100%;
+    max-width:960px;
+    margin:1em auto 0 auto;
+    background-image: url(../images/bg-texture.jpg);
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+
+
+}
+
+nav {
+    position:relative;
+    z-index:1000;
+    overflow:visible;
+    
+}
+
+.logo {
+    position:absolute;
+    top:-8px;
+    left:64px;
+    z-index:1001;
+}
+
+header {
+    height:400px;
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:1;
+}
+
+div#hero-textbox {
+    position: absolute;
+    bottom:30px;
+    left:5.5555%;
+    height:80px;
+    width:41.66666%;
+    background-color:rgb(255,255,255,.5);
+    border-radius:10px;
+    padding:10px;
+    line-height:30px;
+}
+
+main {
+
+    width:41.66666%;
+    float:left;
+    margin-left:5.5555%
+}
+
+aside {
+
+    width:41.66666%;
+    float:right;
+    margin-right:5.5555%
+}
+
+.contentbox {
+    height:300px;
+    border-radius:10px;
+    margin:50px 0;
+    background-image: url(../images/texture-linen.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    padding:1em;
+    overflow:auto;
+}
+
+.button-large {
+    height:32%;
+    background-color:rgb(242,215,178,.4);
+    border-radius:5px;
+    padding:0 24px;
+}
+
+.button-large a:link, a:visited {
+    color:black;
+}
+
+.button-large a:hover {
+    color:#725600;
+}
+.button-top {
+    margin:32px 0;
+}
+
+.button-icon {
+    font-size:4em;
+    float:left;
+    color:black;
+}
+
+.button-text {
+    float:left;
+    margin-left:32px;
+    text-align:center;
+    font-size:1.25em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.cal {
+    line-height:96px;
+}
+
+.phone {
+    line-height:40px;
+}
+
+img.img-staff {
+    border-radius:10px;
+    width:100%;
+}
+
+img.giftcard {
+    width:100%;
+    max-width: 368px;
+}
+
+.meet-the-staff {
+    text-align:center;
+    margin-top:8px;
+}
+footer {
+    clear:both;
+    font-variant: small-caps;
+    font-weight:300;
+}
+
+div#foot-top {
+    background-image: url(../images/texture-linen.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    overflow:auto;
+}
+
+div#foot-info {
+    width:80%;
+    margin:0 auto;
+}
+
+div#foot-info ul {
+    width:33.3%;
+    float:left;
+    line-height:2.5;
+    list-style-type:none;
+    text-align:center;
+    
+}
+
+div#foot-bot {
+    height:48px;
+    line-height:48px;
+    text-align:center;
+    clear:both;
+    background-color:white;
+}
+
+
+@media (max-width:959px)  {
+    main {
+        float:none;
+        width:90%;
+    }
+    aside {
+        float:none;
+        width:90%;
+        display:inline-block;
+        margin-left:5.55%;
+    }
+    div#hero-textbox {
+        width:60%;
+    } 
+    .contentbox {
+        height:100%;
+    }
+    .button-large {
+        display:inline-block;
+        width:100%;
+    }
+}
+    
+@media (max-width:768px) {
+    main {
+        float:none;
+        width:90%;
+    }
+    aside {
+        float:none;
+        width:90%;
+        display:inline-block;
+        margin-left:5.55%;
+    }
+    .contentbox {
+        height:100%;
+    }
+    .button-large {
+        display:inline-block;
+        width:100%;
+    }
+    .logo {
+        display:none;
+    }
+    
+    div#hero-textbox {
+    width:90%;
+    }    
+    img.img-staff {
+        margin:0 auto;
+        width:100%;
+    }
+}
+
+/************* TYPOGRAPHY STYLES **************/
+
+.baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+div#contentbox h3 {
+    display:block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    line-height:1.5;
+}
+
+.copy {
+    line-height:48px;
+}
+
+footer p {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration:none;
+}

@@ -13,34 +13,36 @@
 			color:#f00;
 		}
 
-        label {
-            margin-left:20px;
-        }
-
         input:required {
             border: 1px solid black;
             font-size:.75em;
             font-style:italic;
             border-radius:4px;
-            margin-left:20px;
+            width: 93%;
         }
 
          input:optional, textarea:optional {
-             background-color:#f1f1f1;
-             border:1px solid #ccc;
-             margin-left:20px;
+             background-color:white;
+             border:1px solid black;
+             border-radius:4px;
+        }
+
+        textarea:optional {
+            width: 93%;
         }
 
         input[type="submit"], input[type="button"] {
           background-color: #fff;
           border-radius: 4px;
           border: solid 1px black;
-          padding: 0.3em 0.5em;
+          padding: 1em 5em;
+            font-size:1em;
         }
 
         fieldset {
-          border: 1px solid black;
-          max-width: 350px;
+            border: 1px solid black;
+            max-width: 90%;
+            border-radius:4px;
         }
 
         legend {

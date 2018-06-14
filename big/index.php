@@ -1,73 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>Andy's WEB120 BIG Website</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="robots" content="noindex,nofollow" />
-        <meta charset="utf-8">
-        <script src="https://use.fontawesome.com/6a71565c22.js"></script>
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/big.css" />
-        <link rel="stylesheet" href="css/form.css" />
-        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="http://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
-        <script src="js/script.js"></script>
+<?php include "includes/header.php"?>
 
-        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Comfortaa:400,700|Open+Sans|Patua+One|Poiret+One" rel="stylesheet">
-    </head>
-<body>
-    
-<!-- START WRAPPER -->
-<div class="wrapper">
-    <header>
-      <h1><a href="index.php"><i class="logo fa fa-compass"></i> Andy Wilson's SCC WEB120 Portal</a></h1>
-      <nav id="cssmenu">
-          <ul>
-             <li><a href="../index.php"><span><i class="fa fa-fw fa-bank"></i> WEB120</span></a></li>
-             <li><a href="index.php"><span><i class="fa fa-fw fa-home"></i> BIG</span></a></li>
-             <li><a href="flexbox.php"><span><i class="fa fa-fw fa-cube"></i> Flexbox</span></a></li>
-             <li><a href="galleries.php"><span><i class="fa fa-fw fa-camera-retro"></i> Galleries</span></a></li>
-             <li><a href="#"><span><i class="fa fa-fw fa-chevron-down"></i> Google</span></a>
-                <ul>
-                   <li><a href="calendar.php"><span><i class="fa fa-fw fa-calendar"></i> Calendar</span></a></li>
-                   <li><a href="map.php"><span><i class="fa fa-fw fa-map-o"></i> Map</span></a></li>
-                   <li><a href="youtube.php"><span><i class="fa fa-fw fa-youtube-square"></i> YouTube</span></a></li>
-                </ul>
-             </li>
-             <li><a href="parallax.php"><span><i class="fa fa-fw fa-fighter-jet"></i> Parallax</span></a></li>
-             <li><a href="shoppingcarts.php"><span><i class="fa fa-fw fa-shopping-basket"></i> Shopping Carts</span></a></li>
-             <li><a href="siteapp.php"><span><i class="fa fa-fw fa-html5"></i> Site vs App</span></a></li>
-             <li><a href="webcam.php"><span><i class="fa fa-fw fa-eye"></i> Web Cam</span></a></li>
-          </ul>
-      </nav>
-    </header>
-        
-<!-- START LEFT COL -->
-<section>
- <h2 class="pageID">Welcome!</h2>
-    <!--END header.php include here-->
+    <p>Please fill out the form below with any pertinent information you would like to inquire about! Thanks!</p>
 
-    <!-- add multiple.php contact form addressing questions we ask most web clients-->
+    <?php include "includes/multiple.php"?>
 
-</section>
-<!-- END LEFT COL -->
+    </section>
+    <!-- END LEFT COL -->
 
-<!-- START RIGHT COL -->
-<aside>
- <h3>Additional Resources</h3>
-    <p>Provide at least 3 linked resources that help you and/or your web team with steps found in very basic website design and development cycle. for example, client surveyrs, wireframing tools, etc</p>
-</aside>
-<!-- END RIGHT COL -->
+    <!-- START RIGHT COL -->
+    <aside>
+     <h3>Additional Resources</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/">W3Schools</a>, the best documentation!</li>
+            <li><a href="https://uxplanet.org/5-free-quick-wireframe-tools-for-ui-ux-designers-in-2017-189e6a594fda">5 Great Wireframe Tools for Designers!</a></li>
+            <li><a href="https://survicate.com/website-survey/questions/">20 Great Questions for a Client Survey!</a></li>
+        </ul>
+    </aside>
+    <!-- END RIGHT COL -->
 
-<!--footer.php include starts here-->
-<!-- START Footer -->
-<footer>
-  <p><small>&copy; <?=date('Y')?> by <a href="contactme.php">Andy Wilson</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer">Valid CSS</a></small></p>
-</footer>
-<!-- END Footer --> 
-
-</div>
-<!-- END WRAPPER -->
-
-</body>
-</html>
+<?php include "includes/footer.php"?>

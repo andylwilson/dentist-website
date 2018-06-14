@@ -18,13 +18,13 @@
  */
 
 #EDIT THE FOLLOWING:
-$toAddress = "yourname@example.com";  //place your/your client's email address here
-$toName = "CLIENT NAME HERE"; //place your client's name here
-$website = "CLIENT WEBSITE NAME HERE";  //place NAME of your client's website here
+$toAddress = "andy.wilson@seattlecentral.edu";  //place your/your client's email address here
+$toName = "Andy"; //place your client's name here
+$website = "Andy's BIG Client Form Response";  //place NAME of your client's website here
 #--------------END CONFIG AREA ------------------------#
 $sendEmail = TRUE; //if true, will send an email, otherwise just show user data.
 $dateFeedback = true; //if true will show date/time with reCAPTCHA error - style a div with class of dateFeedback
-include_once 'config.php'; #site keys go inside your config.php file
+include_once 'big-config.php'; #site keys go inside your config.php file
 include 'contact-lib/contact_include.php'; #complex unsightly code moved here
 $response = null;
 $reCaptcha = new ReCaptcha($secretKey);
@@ -41,9 +41,8 @@ if ($response != null && $response->success)
     ?>
     <!-- START HTML FEEDBACK -->
     <div class="contact-feedback">
-        <h2>Your Comments Have Been Received!</h2>
-        <p>Thanks for the input!</p>
-        <p>We'll respond via email within 48 hours, if you requested information.</p>
+        <h2>Thanks for your interest in our web services!</h2>
+        <p>We usually respond via email within 48 hours, if a follow up is needed.</p>
     </div>    
     <!-- END HTML FEEDBACK -->        
     <?php
@@ -84,11 +83,13 @@ if ($response != null && $response->success)
 	
 	<div>	
 		<fieldset>
-			<legend>What Services Are You Interested In?</legend>
+			<legend>What Web Services Are You Interested In?</legend>
 			<input type="checkbox" name="Interested_In[]" value="New Website" tabindex="40" /> New Website <br />
 			<input type="checkbox" name="Interested_In[]" value="Website Redesign" /> Website Redesign <br />
 			<input type="checkbox" name="Interested_In[]" value="Special Application" /> Special Application <br />
-			<input type="checkbox" name="Interested_In[]" value="Lollipops" /> Complimentary Lollipops <br />
+            <input type="checkbox" name="Interested_In[]" value="SEO" /> Search Engine Optimization <br />
+            <input type="checkbox" name="Interested_In[]" value="E-Commerce" /> E-Commerce <br />
+			<input type="checkbox" name="Interested_In[]" value="Bill Murray" /> Bill Murray Fansite <br />
 			<input type="checkbox" name="Interested_In[]" value="Other" /> Other <br />
 		</fieldset>
 	</div>
@@ -96,15 +97,14 @@ if ($response != null && $response->success)
 		<div>	
 		<fieldset>
 			<legend>Would you like to join our mailing list?</legend>
-			<input type="radio" name="Join_Mailing_List?" value="Yes" 
-			required="required" title="Mailing list is required" tabindex="50"  
-			/> Yes <br />
+			<input type="radio" name="Join_Mailing_List?" value="Yes"
+                   title="Mailing list is required" tabindex="50"  /> Yes <br />
 			<input type="radio" name="Join_Mailing_List?" value="No" /> No <br />
 		</fieldset>
 	</div>
 	<div>	
 		<label>
-			Comments:<br /><textarea name="Comments" cols="36" rows="4" placeholder="Your comments are important to us!" tabindex="60"></textarea>
+			Comments:<br /><textarea name="Comments" cols="36" rows="6" placeholder="Your comments are important to us!" tabindex="60"></textarea>
 		</label>
 	</div>	
 	<div><?=$feedback?></div>

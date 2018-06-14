@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div#wrapper {
+    width:100%;
+    max-width:960px;
+    margin:1em auto 0 auto;
+    background-image: url(../images/bg-texture.jpg);
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+
+
+}
+
+nav {
+    height:100px;
+    background-color:rgb(242,215,178,.5);
+}
+
+header {
+    height:400px;
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div#hero-textbox {
+    position: absolute;
+    bottom:30px;
+    left:5.5555%;
+    height:80px;
+    width:41.66666%;
+    background-color:rgb(255,255,255,.5);
+    border-radius:10px;
+    padding:10px;
+    line-height:30px;
+}
+
+main {
+
+    width:41.66666%;
+    float:left;
+    margin-left:5.5555%
+}
+
+aside {
+
+    width:41.66666%;
+    float:right;
+    margin-right:5.5555%
+}
+
+.contentbox {
+    height:300px;
+    border-radius:10px;
+    margin:50px 0;
+    background-image: url(../images/texture-linen.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    padding:1em;
+}
+
+img.img-staff {
+    border-radius:10px;
+    max-width:100%;
+}
+
+footer {
+    clear:both;
+    background-color:antiquewhite;
+    font-variant: small-caps;
+    font-weight:300;
+}
+
+div#foot-top {
+    height:64px;
+    background-color:rgb(198,160,117,.5);
+    
+}
+
+div#foot-mid {
+    background-color:rgb(242,215,178,.5);
+    height:240px;
+}
+
+div#foot-info {
+    width:80%;
+    margin:0 auto;
+}
+
+div#foot-info ul {
+    width:33.3%;
+    float:left;
+    line-height:2.5;
+    list-style-type:none;
+    text-align:center;
+}
+
+div#foot-bot {
+    height:48px;
+    line-height:48px;
+    text-align:center;
+    clear:both;
+    background-color:white;
+}
+
+
+/************* TYPOGRAPHY STYLES **************/
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+div#contentbox h3 {
+    display:block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+}
+
+p {
+    line-height:1.5;
+}
