@@ -22,17 +22,12 @@ if (foundActive === false) {
   activeElement = $("#cssmenu > ul > li").first();
 }
 
-//lineWidth = activeElement.width();
+defaultWidth = lineWidth = activeElement.width();
 
-defaultWidth = lineWidth = 960;
-defaultPosition = linePosition = 0;
-
-//defaultPosition = linePosition = activeElement.position().left;
+defaultPosition = linePosition = activeElement.position().left;
 
 menuLine.css("width", lineWidth);
 menuLine.css("left", linePosition);
-
-//alert('lineWidth: ' + lineWidth);
 
 $("#cssmenu > ul > li").hover(function() {
   activeElement = $(this);
@@ -42,12 +37,6 @@ $("#cssmenu > ul > li").hover(function() {
   menuLine.css("left", linePosition);
 }, function() {
   menuLine.css("left", defaultPosition);
-  
-  if(defaultWidth >= 960)
-  {//disallow defautWidth from getting bigger than 960px
-  	defaultWidth = 960;
-  }
-  
   menuLine.css("width", defaultWidth);
 });
 

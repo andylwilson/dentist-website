@@ -1,62 +1,9 @@
-<!doctype html>
-<html lang='en'>
-<head>
-   <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>2200 Westlake Dentistry - Home</title>
-    
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
-   <script src="js/script.js"></script>
-    
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/nav-styles.css">
-   <link rel="stylesheet" href="css/styles.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-</head>
-<body>
-
-    <div id="wrapper">
-        <nav>
-            <a href="index.php"><img class="logo" src="images/logo.png" alt="logo"></a>
-        <div id="cssmenu" class="align-right">
-          <ul>
-             <li><a href="#">Contact Us</a></li>
-             <li><a href="#">Patient Information</a></li>
-             <li class="has-sub"><a href="#">Our Services</a>
-                <ul>
-                   <li><a href="#">Preventative Dentistry</a></li>
-                   <li><a href="#">Restorative Dentistry</a></li>
-                   <li><a href="#">Cosmetic Dentistry</a></li>
-                   <li><a href="#">Children's Dentistry</a></li>
-                   <li><a href="#">Invisalign</a></li>
-                   <li><a href="#">Teeth Whitening</a></li>
-                </ul>
-             </li>
-             <li class="active has-sub"><a href="#">Our Office</a>
-                <ul>
-                   <li><a href="#">Meet the Staff</a></li>
-                   <li><a href="#">About Our Office</a></li>
-                </ul>
-             </li>
-
-
-
-          </ul>
-        </div> <!--end cssmenu-->
-        </nav>
-        
-        <header>
-            <div id="hero-textbox">
-                <h3>Welcome to 2200 Westlake Dentistry...<br>Expect Excellence</h3>
-            </div>
-        </header>
+<?php include "includes/header.php"?>
         
         <main>
             <div class="contentbox">
                 <img class="img-staff" src="images/staff-small.jpg" alt="Staff Photo">
-                <h3 class="meet-the-staff">Meet the Staff</h3>
+                <h3 class="meet-the-staff baskerville">Meet the Staff</h3>
             </div>
             <div class="contentbox">
                 <p>2200 Westlake Dentistry is the dental practice of general dentist, Dr. Bridget Singh. Located in South Lake Union, we welcome patients of all ages. We provide a wide range of services, including general dentistry, cosmetic dentisry, pediatric dentistry and sedation dentistry. 2200 Westlake Dentistry is also a provider of Invisalign and SinSational Teeth Whitening. If you need a root canal, dental crown, veneers, periodontal treatment, or just a great dental cleaning, call us today!</p>
@@ -74,47 +21,8 @@
                 </div>
             </div>
             <div class="contentbox">
-                <img src="images/giftcard.png" alt="Gift Card Logos">
+                <img class="giftcard" src="images/giftcard.png" alt="Gift Card Logos">
                 <p>When you refer your friends and family as a new patient, you receive a $35 gift card to your choice of Starbucks, Whole Foods, or Amazon! It’s our way of saying thank you for your trust and loyalty. Download the referral form below to get started!</p>
             </div>
         </aside>
-        
-        <footer>
-            <div id="foot-top">
-                <div id="foot-info">
-                    <ul>
-                        <li><strong>Site Map</strong></li>
-                        <li>Our Office</li>
-                        <li>Services</li>
-                        <li>Patient Info</li>
-                        <li>Contact Us</li>
-                    </ul>
-                    <ul>
-                        <li><strong>Services</strong></li>
-                        <li>Preventative Dentistry</li>
-                        <li>Restorative Dentistry</li>
-                        <li>Cosmetic Dentistry</li>
-                        <li>Children’s Dentistry</li>
-                        <li>Invisalign</li>
-                        <li>Teeth Whitening</li>
-                    </ul>
-                    <ul>
-                        <li><strong>Find Us</strong></li>
-                        <li>Hours</li>
-                        <li>9:00AM - 7:00PM T-W</li>
-                        <li>8:00AM - 3:00PM T-F</li>
-                        <li></li>
-                        <li>Address:</li>
-                        <li>900 Lenora St, Ste 216</li>
-                        <li>Seattle, WA 98121</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="foot-bot">
-                <p>Copyright &copy; <?=date('Y')?> | 2200 Westlake Dentistry | All Rights Reserved | <a href="">Web Design by Andy</a> | <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Valid</a> | <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Valid</a></p>
-            </div>
-        </footer>
-    </div><!--end wrapper-->
-
-</body>
-</html>
+<?php include "includes/footer.php"?>
