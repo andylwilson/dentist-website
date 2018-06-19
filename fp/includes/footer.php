@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div id="foot-bot">
-                <p class="copy">Copyright &copy; <?=date('Y')?> | 2200 Westlake Dentistry | All Rights Reserved | <a href="">Web Design by Andy</a> | <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Valid</a> | <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Valid</a></p>
+                <p class="copy">Copyright &copy; <?=date('Y')?> | 2200 Westlake Dentistry | <a href="../fp/disclaimer.php">Disclaimer</a> | <a href="">Web Design by Andy</a> | <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Valid</a> | <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Valid</a></p>
             </div>
         </footer>
     </div><!--end wrapper-->

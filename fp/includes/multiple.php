@@ -20,11 +20,11 @@
 #EDIT THE FOLLOWING:
 $toAddress = "andy.wilson@seattlecentral.edu";  //place your/your client's email address here
 $toName = "Andy"; //place your client's name here
-$website = "Andy's BIG Client Form Response";  //place NAME of your client's website here
+$website = "2200 Westlake Contact Form Response";  //place NAME of your client's website here
 #--------------END CONFIG AREA ------------------------#
 $sendEmail = TRUE; //if true, will send an email, otherwise just show user data.
 $dateFeedback = true; //if true will show date/time with reCAPTCHA error - style a div with class of dateFeedback
-include_once 'big-config.php'; #site keys go inside your config.php file
+include_once 'fp-config.php'; #site keys go inside your config.php file
 include 'contact-lib/contact_include.php'; #complex unsightly code moved here
 $response = null;
 $reCaptcha = new ReCaptcha($secretKey);
@@ -41,7 +41,7 @@ if ($response != null && $response->success)
     ?>
     <!-- START HTML FEEDBACK -->
     <div class="contact-feedback">
-        <h2>Thanks for your interest in our web services!</h2>
+        <h2>Thanks for your interest in our office!</h2>
         <p>We usually respond via email within 48 hours, if a follow up is needed.</p>
     </div>    
     <!-- END HTML FEEDBACK -->        
@@ -66,7 +66,6 @@ if ($response != null && $response->success)
 			Email:<br /><input type="email" name="Email" required="required" placeholder="Email (required)" title="A valid email is required" tabindex="20" size="44" />
 		</label>
 	</div>
-	<!-- below change the HTML to your form elements - only 'Name' & 'Email' (above) are significant -->
 	<div>	
 		<label>
 			How Did You Hear About Us?:<br />
@@ -83,13 +82,13 @@ if ($response != null && $response->success)
 	
 	<div>	
 		<fieldset>
-			<legend>What Web Services Are You Interested In?</legend>
-			<input type="checkbox" name="Interested_In[]" value="New Website" tabindex="40" /> New Website <br />
-			<input type="checkbox" name="Interested_In[]" value="Website Redesign" /> Website Redesign <br />
-			<input type="checkbox" name="Interested_In[]" value="Special Application" /> Special Application <br />
-            <input type="checkbox" name="Interested_In[]" value="SEO" /> Search Engine Optimization <br />
-            <input type="checkbox" name="Interested_In[]" value="E-Commerce" /> E-Commerce <br />
-			<input type="checkbox" name="Interested_In[]" value="Bill Murray" /> Bill Murray Fansite <br />
+			<legend>Which Dental Services Are You Interested In?</legend>
+			<input type="checkbox" name="Interested_In[]" value="Preventative" tabindex="40" /> Preventative Dentistry <br />
+			<input type="checkbox" name="Interested_In[]" value="Website Redesign" /> Restorative Dentistry <br />
+			<input type="checkbox" name="Interested_In[]" value="Cosmetic" /> Cosmetic Dentistry <br />
+            <input type="checkbox" name="Interested_In[]" value="Childrens" /> Children's Dentistry <br />
+            <input type="checkbox" name="Interested_In[]" value="Invisalign" /> Invisalign <br />
+			<input type="checkbox" name="Interested_In[]" value="Whitening" /> Teeth Whitening <br />
 			<input type="checkbox" name="Interested_In[]" value="Other" /> Other <br />
 		</fieldset>
 	</div>

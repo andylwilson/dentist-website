@@ -78,7 +78,7 @@ aside {
 }
 
 .contentbox {
-    height:300px;
+    min-height:300px;
     border-radius:10px;
     margin:50px 0;
     background-image: url(../images/texture-linen.jpg);
@@ -88,8 +88,29 @@ aside {
     overflow:auto;
 }
 
+.contentbox-contact {
+    border-radius:10px;
+    margin:50px 0;
+    background-image: url(../images/texture-linen.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    padding:1em;
+    overflow:auto;
+}
+
+.services {
+    width:90%;
+    border-radius:10px;
+    float:none;
+    margin:50px auto;
+    background-image: url(../images/texture-linen.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    padding:1em;
+}
+
 .button-large {
-    height:32%;
+    min-height:88px;
     background-color:rgb(242,215,178,.4);
     border-radius:5px;
     padding:0 24px;
@@ -130,6 +151,15 @@ aside {
 
 img.img-staff {
     border-radius:10px;
+    width:100%;
+}
+
+img.service {
+    border-radius:10px;
+    max-width:368px;
+    float:right;
+    margin:1.5em;
+    border: 5px solid #f2d7b2;
     width:100%;
 }
 
@@ -192,9 +222,6 @@ div#foot-bot {
     div#hero-textbox {
         width:60%;
     } 
-    .contentbox {
-        height:100%;
-    }
     .button-large {
         display:inline-block;
         width:100%;
@@ -212,9 +239,7 @@ div#foot-bot {
         display:inline-block;
         margin-left:5.55%;
     }
-    .contentbox {
-        height:100%;
-    }
+
     .button-large {
         display:inline-block;
         width:100%;
@@ -232,6 +257,24 @@ div#foot-bot {
     }
 }
 
+/********* EMBED RESPONSIVELY STYLES **********/
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width:0px;
+}
 /************* TYPOGRAPHY STYLES **************/
 
 .baskerville {
@@ -245,6 +288,20 @@ div#contentbox h3 {
     font-family: 'Libre Baskerville', serif;
 }
 
+.services>h1 {
+    margin-bottom:1em;
+}
+.services>h2 {
+    margin-bottom:1em;
+}
+.services>h3 {
+    margin-bottom:1em;
+}
+
+.services>p {
+    margin-bottom:1em;
+}
+
 p {
     line-height:1.5;
 }
@@ -256,6 +313,10 @@ p {
 footer p {
     font-size: 12px;
     text-transform: uppercase;
+}
+
+.footer a {
+    color:black;
 }
 
 a {
